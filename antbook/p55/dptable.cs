@@ -18,7 +18,7 @@ class dptable
             table[itemnum,i] = 0;
         }
 
-        for( int i=itemnum; i>=0; i-- ){
+        for( int i=itemnum-1; i>=0; i-- ){
             for( int j=0; j<=WEIGHT_MAX; j++ ){
                 if( j<weight[i] ){
                     table[i,j] = table[i+1,j];
